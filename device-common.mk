@@ -100,10 +100,6 @@ persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 PRODUCT_COPY_FILES += \
     device/google/bonito/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).logging.rc
 
-# ANGLE
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.gfx.angle.supported=true
-
 # Dumpstate HAL
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.0-service.bonito
@@ -123,10 +119,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_PATH_product=bin/check_dynamic_partitions \
     FILESYSTEM_TYPE_product=ext4 \
     POSTINSTALL_OPTIONAL_product=false \
-
-# Google Assistant
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.opa.eligible_device=true
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.use_color_management=true
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
