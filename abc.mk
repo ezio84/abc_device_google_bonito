@@ -24,19 +24,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 PRODUCT_NAME := abc_bonito
 PRODUCT_DEVICE := bonito
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a XL
-PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="bonito" \
-    TARGET_DEVICE="bonito" \
-    PRIVATE_BUILD_DESC="bonito-user 10 QQ3A.200605.002 6416773 release-keys"
+    PRIVATE_BUILD_DESC="bonito-user 10 QQ3A.200705.002 6506677 release-keys"
 
-BUILD_FINGERPRINT := "google/bonito/bonito:QQ3A.200605.002/6416773:user/release-keys"
+BUILD_FINGERPRINT := "google/bonito/bonito:QQ3A.200705.002/6506677:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/bonito/bonito:10/QQ3A.200605.002/6416773:user/release-keys
+    ro.build.fingerprint=google/bonito/bonito:10/QQ3A.200705.002/6506677:user/release-keys
 
 BOARD_PREBUILT_VENDORIMAGE := vendor/images/bonito/vendor.img
 
