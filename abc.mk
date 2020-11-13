@@ -36,5 +36,9 @@ BUILD_FINGERPRINT := "google/bonito/bonito:11/RP1A.200720.009/6720564:user/relea
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/bonito/bonito:11/RP1A.200720.009/6720564:user/release-keys
 
+# Active Edge
+PRODUCT_PACKAGES += \
+    ElmyraService
+
 $(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
